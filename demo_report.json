@@ -1,0 +1,131 @@
+{
+  "target": "examples/bad_code.py",
+  "security": {},
+  "quality": {
+    "issues": [
+      {
+        "type": "refactor",
+        "module": "bad_code",
+        "obj": "complex_function",
+        "line": 14,
+        "column": 20,
+        "endLine": 17,
+        "endColumn": 44,
+        "path": "examples/bad_code.py",
+        "symbol": "no-else-return",
+        "message": "Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it",
+        "message-id": "R1705"
+      },
+      {
+        "type": "convention",
+        "module": "bad_code",
+        "obj": "badNaming",
+        "line": 37,
+        "column": 0,
+        "endLine": 37,
+        "endColumn": 13,
+        "path": "examples/bad_code.py",
+        "symbol": "invalid-name",
+        "message": "Function name \"badNaming\" doesn't conform to snake_case naming style",
+        "message-id": "C0103"
+      },
+      {
+        "type": "convention",
+        "module": "bad_code",
+        "obj": "",
+        "line": 43,
+        "column": 0,
+        "endLine": 43,
+        "endColumn": 10,
+        "path": "examples/bad_code.py",
+        "symbol": "wrong-import-position",
+        "message": "Import \"import sys\" should be placed at the top of the module",
+        "message-id": "C0413"
+      },
+      {
+        "type": "warning",
+        "module": "bad_code",
+        "obj": "",
+        "line": 2,
+        "column": 0,
+        "endLine": 2,
+        "endColumn": 9,
+        "path": "examples/bad_code.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+      },
+      {
+        "type": "warning",
+        "module": "bad_code",
+        "obj": "",
+        "line": 43,
+        "column": 0,
+        "endLine": 43,
+        "endColumn": 10,
+        "path": "examples/bad_code.py",
+        "symbol": "unused-import",
+        "message": "Unused import sys",
+        "message-id": "W0611"
+      }
+    ]
+  },
+  "style": [
+    "examples/bad_code.py:2:1: F401 'os' imported but unused",
+    "examples/bad_code.py:8:1: E302 expected 2 blank lines, found 1",
+    "examples/bad_code.py:27:1: E302 expected 2 blank lines, found 1",
+    "examples/bad_code.py:31:1: E302 expected 2 blank lines, found 1",
+    "examples/bad_code.py:37:1: E302 expected 2 blank lines, found 1",
+    "examples/bad_code.py:37:15: E201 whitespace after '('",
+    "examples/bad_code.py:37:17: E231 missing whitespace after ','",
+    "examples/bad_code.py:37:19: E202 whitespace before ')'",
+    "examples/bad_code.py:39:6: E225 missing whitespace around operator",
+    "examples/bad_code.py:43:1: F401 'sys' imported but unused",
+    "examples/bad_code.py:43:1: E305 expected 2 blank lines after class or function definition, found 1",
+    "examples/bad_code.py:43:1: E402 module level import not at top of file"
+  ],
+  "complexity": {
+    "examples/bad_code.py": [
+      {
+        "type": "function",
+        "rank": "B",
+        "name": "complex_function",
+        "col_offset": 0,
+        "endline": 25,
+        "complexity": 6,
+        "lineno": 8,
+        "closures": []
+      },
+      {
+        "type": "function",
+        "rank": "A",
+        "name": "unsafe_pickle",
+        "col_offset": 0,
+        "endline": 29,
+        "complexity": 1,
+        "lineno": 27,
+        "closures": []
+      },
+      {
+        "type": "function",
+        "rank": "A",
+        "name": "sql_injection",
+        "col_offset": 0,
+        "endline": 34,
+        "complexity": 1,
+        "lineno": 31,
+        "closures": []
+      },
+      {
+        "type": "function",
+        "rank": "A",
+        "name": "badNaming",
+        "col_offset": 0,
+        "endline": 40,
+        "complexity": 1,
+        "lineno": 37,
+        "closures": []
+      }
+    ]
+  }
+}

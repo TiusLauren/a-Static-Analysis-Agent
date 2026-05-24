@@ -22,6 +22,7 @@ dist/
 reports/
 *.html
 *.json
+!demo_report.json
 
 # Environment
 .env
