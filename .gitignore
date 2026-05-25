@@ -20,9 +20,8 @@ dist/
 
 # Reports
 reports/
-*.html
-*.json
 !demo_report.json
+!campaign_proof.html
 
 # Environment
 .env
